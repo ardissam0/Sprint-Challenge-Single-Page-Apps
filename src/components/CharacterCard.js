@@ -12,11 +12,15 @@ export default function CharacterCard({ character }) {
           </CardTitle>
           <CardSubtitle>
             <span>Status: </span>
+            <p>{character.status}</p>
+          </CardSubtitle>
+          <CardSubtitle>
+            <span>Gender: </span>
             <p>{character.gender}</p>
           </CardSubtitle>
           <CardSubtitle>
             <span>Episodes: </span>
-            <p>{character.episodes.length}</p>
+            <p>{character.episode.length}</p>
           </CardSubtitle>
         </CardBody>
       </Card>
