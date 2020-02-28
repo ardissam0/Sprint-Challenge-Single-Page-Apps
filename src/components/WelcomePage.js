@@ -6,15 +6,18 @@ export default function WelcomePage() {
     <section className="welcome-page">
       <header>
         <h1>Welcome to the ultimate fan site!</h1>
+        <div style={{marginLeft:'28%', marginBottom:'3%',}}> 
+          <Link to='/characters' className='link-characters'>
+              Characters
+          </Link>
+        </div>
+        <div style={{marginLeft:'28%',}}>
         <img
           className="main-img"
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
           alt="rick"
         />
-
-        <Link to='/characters' className='link-characters'>
-          Characters
-        </Link>
+        </div>
       </header>
     </section>
   );

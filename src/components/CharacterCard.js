@@ -5,7 +5,7 @@ export default function CharacterCard({ character }) {
   return (
     <div>
       <Card>
-        <CardImg top width='100%' src={character.image} alt='Card image' />
+        <CardImg top width='50%' src={character.image} alt='Character image' />
         <CardBody>
           <CardTitle>
             <h2>{character.name}</h2>
