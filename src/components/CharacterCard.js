@@ -4,8 +4,8 @@ import { Card, CardImg, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 export default function CharacterCard({ character }) {
   return (
     <div>
-      <Card>
-        <CardImg top width='50%' src={character.image} alt='Character image' />
+      <Card className="character-card-main">
+        <CardImg className="character-img-card" top width='50%' src={character.image} alt='Character image' />
         <CardBody>
           <CardTitle>
             <h2>{character.name}</h2>
