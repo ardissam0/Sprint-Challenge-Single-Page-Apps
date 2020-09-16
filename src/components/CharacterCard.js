@@ -1,5 +1,29 @@
 import React from "react";
+import { Card, CardImg, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 
-export default function CharacterCard() {
-  return <span>todo: character</span>;
+export default function CharacterCard({ character }) {
+  return (
+    <div>
+      <Card className="character-card-main">
+        <CardImg className="character-img-card" top width='50%' src={character.image} alt='Character image' />
+        <CardBody>
+          <CardTitle>
+            <h2>{character.name}</h2>
+          </CardTitle>
+          <CardSubtitle>
+            <span>Status: </span>
+            <p>{character.status}</p>
+          </CardSubtitle>
+          <CardSubtitle>
+            <span>Gender: </span>
+            <p>{character.gender}</p>
+          </CardSubtitle>
+          <CardSubtitle>
+            <span>Episodes: </span>
+            <p>{character.episode.length}</p>
+          </CardSubtitle>
+        </CardBody>
+      </Card>
+    </div>
+  );
 }
